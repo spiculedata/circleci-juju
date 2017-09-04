@@ -1,0 +1,8 @@
+spawn charm login
+expect "E-Mail:"
+send "$env(USERNAME)\r"
+expect "Password:"
+send "$env(PASSWORD)\r"
+send "\r"
+expect eof
+
